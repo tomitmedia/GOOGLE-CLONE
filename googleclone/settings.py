@@ -99,9 +99,7 @@ DATABASES = {
 #     }
 # }
 
-# DATABASES = {
-#     'default': dj_database_url.config(default='postgres://tomitmedia:tioluwanimi1.@localhost/db.sqlite3')
-# }
+
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
@@ -141,4 +139,4 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 django_heroku.settings(locals())
-DEFAULT_AUTO_FIELD='django.db.models.AutoField'
+# DEFAULT_AUTO_FIELD='django.db.models.AutoField'
