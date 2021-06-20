@@ -1,0 +1,27 @@
+[
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$260000$zIJ8WeCe8YENFNbGE29J3I$Jz+ojHB8xqdst5MeTqlzx4iIR9c630VoVVw/KWxmSTc=",
+        "last_login": "2021-06-20T17:32:54.349Z",
+        "is_superuser": true,
+        "username": "tomitmedia",
+        "first_name": "",
+        "last_name": "",
+        "email": "tomitmedia1@gmail.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2021-06-20T17:32:23.362Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "kf3y360xa6g4zxnftmk5cbvik3gsnqxq",
+    "fields": {
+        "session_data": ".eJxVjDEOwjAMRe-SGUVxnESGkZ0zRE7s0gJqpaadKu4OlTrA-t97fzOZ16XPa9M5D2IuBszpdytcnzruQB483idbp3GZh2J3xR602dsk-roe7t9Bz63_1krqi0BKjnzCUAPGTpKWgKgQu4okDhwKEGlEByzsKzME76nUM5n3B9XBN4k:1lv1JW:wS6VnPAJGGdnV-PT5O3e4s1XjthMrlD7AhK-ocC6WN8",
+        "expire_date": "2021-07-04T17:32:54.539Z"
+    }
+}
+]
