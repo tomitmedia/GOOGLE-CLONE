@@ -7,10 +7,10 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
-from pathlib import Path
 import os
-import django_heroku
+# import django_heroku
 import dj_database_url
+from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -19,17 +19,16 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
-# SECRET_KEY = 'django-insecure-nkkc#5y)i&+axb)akcscmvy@3_hhi0o-%fky@civb^tezxn8he'
 SECRET_KEY = '0r3j@78*jne$m8dk!*0&_slul46^o8_@xo&em5t2%l&e)*dh3'
-# SECRET_KEY = os.environ['SECRET_KEY']
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = False
-DEBUG = True
+DEBUG = False
+# DEBUG = True
 
-ALLOWED_HOSTS = ['google-tom.herokuapp.com', 'google-tom.com', 'www.google-tom.com']
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+ALLOWED_HOSTS = ['google-tom.herokuapp.com', 'google-tom.co', 'www.google-tom.co']
 
 # ALLOWED_HOSTS = ['*']
 
@@ -61,7 +60,7 @@ ROOT_URLCONF = 'googleclone.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')],
+        'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -127,7 +126,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-STATICFILES_STORAGE = (os.path.join(BASE_DIR, 'static'),)
-django_heroku.settings(locals())
-# DEFAULT_AUTO_FIELD='django.db.models.AutoField'
+# STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+# STATICFILES_STORAGE = (os.path.join(BASE_DIR, 'static'),)
+# django_heroku.settings(locals())
+DEFAULT_AUTO_FIELD='django.db.models.AutoField'
