@@ -20,10 +20,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '49b*7v!@zvyhrw6m(nndrzbi^uo98r_!9)xwn&68#y$=y-ksb4'
+# SECRET_KEY = 'django-insecure-nkkc#5y)i&+axb)akcscmvy@3_hhi0o-%fky@civb^tezxn8he'
+SECRET_KEY = 'django-insecure-c)%amadsl)*t-9*oinqa$c_2thigh&h)odzb^^d%6r6mthh-sc'
+
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -81,6 +83,10 @@ DATABASES = {
 }
 
 
+# DATABASES = {
+#     'default': dj_database_url.config(default='postgres://tomitmedia:tioluwanimi1@localhost/db.sqlite3')
+# }
+
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
 
@@ -119,3 +125,4 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 django_heroku.settings(locals())
+DEFAULT_AUTO_FIELD='django.db.models.AutoField'
