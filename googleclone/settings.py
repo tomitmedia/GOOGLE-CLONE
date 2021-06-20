@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-c)%amadsl)*t-9*oinqa$c_2thigh&h)odzb^^d%6r6mthh-sc
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['google-tom.herokuapp.com', 'google-tom.co', 'www.google-tom.co']
 
@@ -51,6 +51,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'googleclone.urls'
