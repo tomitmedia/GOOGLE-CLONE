@@ -29,7 +29,7 @@ SECRET_KEY = '0r3j@78*jne$m8dk!*0&_slul46^o8_@xo&em5t2%l&e)*dh3'
 # DEBUG = False
 DEBUG = True
 
-ALLOWED_HOSTS = ['google-tom.herokuapp.com', 'google-tom.co', 'www.google-tom.co']
+ALLOWED_HOSTS = ['google-tom.herokuapp.com', 'google-tom.com', 'www.google-tom.com']
 
 # ALLOWED_HOSTS = ['*']
 
@@ -127,5 +127,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATICFILES_STORAGE = (os.path.join(BASE_DIR, 'static'),)
 django_heroku.settings(locals())
 # DEFAULT_AUTO_FIELD='django.db.models.AutoField'
