@@ -26,8 +26,8 @@ SECRET_KEY = '0r3j@78*jne$m8dk!*0&_slul46^o8_@xo&em5t2%l&e)*dh3'
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
-# DEBUG = True
+# DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['google-tom.herokuapp.com', 'google-tom.co', 'www.google-tom.co']
 
