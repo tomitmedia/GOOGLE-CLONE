@@ -21,11 +21,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 # SECRET_KEY = 'django-insecure-nkkc#5y)i&+axb)akcscmvy@3_hhi0o-%fky@civb^tezxn8he'
-SECRET_KEY = 'django-insecure-c)%amadsl)*t-9*oinqa$c_2thigh&h)odzb^^d%6r6mthh-sc'
+SECRET_KEY = '0r3j@78*jne$m8dk!*0&_slul46^o8_@xo&em5t2%l&e)*dh3'
+# SECRET_KEY = os.environ['SECRET_KEY']
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
+# DEBUG = True
 
 ALLOWED_HOSTS = ['google-tom.herokuapp.com', 'google-tom.co', 'www.google-tom.co']
 
@@ -87,7 +89,18 @@ DATABASES = {
 
 
 # DATABASES = {
-#     'default': dj_database_url.config(default='postgres://tomitmedia:tioluwanimi1@localhost/db.sqlite3')
+
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'db.sqlite3',
+#         'USER': 'postgres',
+#         'PASSWORD': 'tioluwanimi1.',
+#         'HOST':'localhost',
+#     }
+# }
+
+# DATABASES = {
+#     'default': dj_database_url.config(default='postgres://tomitmedia:tioluwanimi1.@localhost/db.sqlite3')
 # }
 
 # Password validation
